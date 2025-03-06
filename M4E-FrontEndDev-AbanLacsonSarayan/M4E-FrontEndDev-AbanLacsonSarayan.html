@@ -2,139 +2,147 @@
 <html lang="en">
 
 <head>
+    <title>M4E</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif">
     <audio autoplay loop><source src="./Superman_ThemeSong.mp3" type="audio/mpeg">Audio not supported.</audio>
-    <div class="row">
-        <div class="col px-4 py-3">
-            <h1> Some Header </h1>
-            <hr>
-        </div>
-    </div>
+    <header style="padding-left: 10px; padding-top: 10px;">
+        <h1><strong>Some Header</strong></h1>
+    </header>
 
-    <div class="d-flex justify-content-center align-items-center gap-3 vh-50">
+    <hr>
 
+    <form class="d-flex justify-content-center align-items-center gap-3 vh-50">
         <div>
             <label for="field1">Field 1</label>
         </div>
-            <div>
-                <input id="field1" class="form-control">
-            </div>
-        <div><label>Field 2</label></div>
         <div>
-            <select class="form-control">
-                <option>Open menu</option>
+            <input type="text" name="Field 1" id="field1" class="form-control">
+        </div>
+        <div>
+            <label for="field2">Field 2</label>
+        </div>
+        <div>
+            <select name="Field 2" id="field2" class="form-select">
+                <option value="">Open menu</option>
+                <option value="option 1">option 1</option>
+                <option value="option 2">option 2</option>
+                <option value="option 3">option 3</option>
             </select>
         </div>
-        <div><label>Field 3</label></div>
-        <div><textarea class="form-control" rows="3"></textarea></div>
-        <div><button type="submit" class="btn btn-primary">Submit</button></div>
-    </div>
+        <div>
+            <label for="field3">Field 3</label>
+        </div>
+        <div>
+            <textarea name="Field 2" id="field3" class="form-control"></textarea>
+        </div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
 
     <hr>
 
     <div class="container">
-        <table class="table table-striped mx-auto" style="width:50%">
+        <table class="table table-striped mx-auto" style="width:68%">
             <thead class="table-dark">
                 <tr>
                     <th>#</th>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
                     <th>Superhero Name</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>1</td>
+                    <th scope="row">1</th>
                     <td>Bruce</td>
                     <td>Wayne</td>
                     <td>Batman</td>
                 </tr>
                 <tr>
-                    <td>2</td>
+                    <th scope="row">2</th>
                     <td>Selina</td>
                     <td>Kyle</td>
                     <td>Catwoman</td>
                 </tr>
                 <tr>
-                    <td>3</td>
+                    <th scope="row">3</th>
                     <td>Diana</td>
                     <td>Prince</td>
                     <td>Wonder Woman</td>
                 </tr>
                 <tr>
-                    <td>4</td>
+                    <th scope="row">4</th>
                     <td>Harlene</td>
                     <td>Quinzel</td>
                     <td>Harley Quinn</td>
                 </tr>
                 <tr>
-                    <td>5</td>
+                    <th scope="row">5</th>
                     <td>Damian</td>
                     <td>Wayne</td>
                     <td>Robin</td>
                 </tr>
                 <tr>
-                    <td>6</td>
+                    <th scope="row">6</th>
                     <td>Richard</td>
                     <td>Grayson</td>
                     <td>Nightwing</td>
                 </tr>
                 <tr>
-                    <td>7</td>
+                    <th scope="row">7</th>
                     <td>Jason</td>
                     <td>Todd</td>
                     <td>Red Hood</td>
                 </tr>
                 <tr>
-                    <td>8</td>
+                    <th scope="row">8</th>
                     <td>Barry</td>
                     <td>Allen</td>
                     <td>The Flash</td>
                 </tr>
                 <tr>
-                    <td>9</td>
+                    <th scope="row">9</th>
                     <td>Wally</td>
                     <td>West</td>
                     <td>Kid Flash</td>
                 </tr>
                 <tr>
-                    <td>10</td>
+                    <th scope="row">10</th>
                     <td>Clark</td>
                     <td>Kent</td>
                     <td>Superman</td>
                 </tr>
                 <tr>
-                    <td>11</td>
+                    <th scope="row">11</th>
                     <td>Connor</td>
                     <td>Kent</td>
                     <td>Superboy</td>
                 </tr>
                 <tr>
-                    <td>12</td>
+                    <th scope="row">12</th>
                     <td>Roy</td>
                     <td>Harper</td>
                     <td>Arsenal</td>
                 </tr>
                 <tr>
-                    <td>13</td>
+                    <th scope="row">13</th>
                     <td>Garfield</td>
                     <td>Logan</td>
                     <td>Beast Boy</td>
                 </tr>
                 <tr>
-                    <td>14</td>
+                    <th scope="row">14</th>
                     <td>Zatanna</td>
                     <td>Zatara</td>
                     <td>Zatanna</td>
                 </tr>
                 <tr>
-                    <td>15</td>
+                    <th scope="row">15</th>
                     <td>Victor</td>
                     <td>Stone</td>
                     <td>Cyborg</td>
