@@ -28,40 +28,80 @@ For jumbotron: https://getbootstrap.com/docs/4.0/components/jumbotron/
     <div class="row">
         <div class="col pt-2">
             <h1 class="ml-10" style="padding-left: 20px;"><strong>Wines For Sale</strong></h1>
-            <hr>
+            <hr style="margin: 0;">
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="carousel slide w-75 mx-auto" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <h5>
-                        <strong>La Vieille Ferme Blanc</strong>
-                    </h5>
-                    <p>
-                        Pretty pale yellow colour with shiny green and silver reflections. Freshness and a dominant floral character characterise the nose of this wine with a seductive aromatic variety which offers notes of jasmine and hawthorn, then evolving into gourmet aromas of juicy pears. Mineral and lively, the palate reveals aromas of blood orange highlighted by a fine bitterness.
-                    </p>
+    <div class="row justify-content-center bg-light" style="padding-top: 20px; padding-bottom: 20px;">
+        <div id="best-sellers" class="carousel slide w-75" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="row">
+                <div class="col-1">
                 </div>
-                <div class="carousel-item">
-                    <h5>
-                        <strong>Fat Bastard Pinot Noir</strong>
-                    </h5>
-                    <p>
-                        Intense, cherry red in color with fruit-forward flavors of crushed strawberry and wild raspberry followed by delicate tannins and a long, smooth finish. This Pinot Noir complements a variety of dishes including grilled pork sausage with white asparagus or fresh salads tossed in balsamic vinegar.
-                    </p>
-                    <br>
+                <div class="col-10">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-middle">
+                                <div class="col-2">
+                                    <img src="https://manila-wine.com/media/catalog/product/cache/ab779e9c28832bdb1d1b6d48074ac569/p/r/product2127.jpg" class="img-fluid" style="border: 1px solid lightgray; border-radius: 3px;">
+                                </div>
+                                <div class="col-10">
+                                    <h5>
+                                        <strong>La Vieille Ferme Blanc</strong>
+                                        <span class="badge text-bg-primary" style="padding-left: 5px; padding-right: 5px;">best-seller</span>
+                                    </h5>
+                                    <p>
+                                        Pretty pale yellow colour with shiny green and silver reflections. Freshness and a dominant floral character characterise the nose of this wine with a seductive aromatic variety which offers notes of jasmine and hawthorn, then evolving into gourmet aromas of juicy pears. Mineral and lively, the palate reveals aromas of blood orange highlighted by a fine bitterness.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="https://www.woodswholesalewine.com/cdn/shop/products/image_4532c1d8-8a75-4ec0-84a5-8a799c5965c0_1200x1200.png?v=1598125666" class="img-fluid" style="border: 1px solid lightgray; border-radius: 3px;">
+                                </div>
+                                <div class="col-10">
+                                    <h5>
+                                        <strong>Fat Bastard Pinot Noir</strong>
+                                        <span class="badge text-bg-primary" style="padding-left: 5px; padding-right: 5px;">best-seller</span>
+                                    </h5>
+                                    <p>
+                                        Intense, cherry red in color with fruit-forward flavors of crushed strawberry and wild raspberry followed by delicate tannins and a long, smooth finish. This Pinot Noir complements a variety of dishes including grilled pork sausage with white asparagus or fresh salads tossed in balsamic vinegar.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="https://gabriel-meffre.fr/wp-content/uploads/2023/04/zoom-viognier-blanc-laurus.jpg" class="img-fluid" style="border: 1px solid lightgray; border-radius: 3px;">
+                                </div>
+                                <div class="col-10">
+                                    <h5>
+                                        <strong>Laurus Viognier</strong>
+                                        <span class="badge text-bg-primary" style="padding-left: 5px; padding-right: 5px;">best-seller</span>
+                                    </h5>
+                                    <p>
+                                        Rich, unctuous and fleshy, with tons of pineapple, peach liqueur and hints of orange blossom, the 2016 Condrieu Laurus is medium to full-bodied, rounded, layered and decadent on the palate. It has a supple, ripe, layered style, this Condrieu is one of the stars of the northern Rhone. Pair with lobster ravioli or scallops with cream and white wine.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-                <div class="carousel-item">
-                    <h5>
-                        <strong>Laurus Viognier</strong>
-                    </h5>
-                    <p>
-                        Rich, unctuous and fleshy, with tons of pineapple, peach liqueur and hints of orange blossom, the 2016 Condrieu Laurus is medium to full-bodied, rounded, layered and decadent on the palate. It has a supple, ripe, layered style, this Condrieu is one of the stars of the northern Rhone. Pair with lobster ravioli or scallops with cream and white wine.
-                    </p>
+                <div class="col-1">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#best-sellers" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: gray;"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#best-sellers" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: gray;"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </div>
-        <hr>
+    </div>
+    <hr style="margin: 0;>
     </div>
     <div class="container-fluid"> 
         <div class="row">
