@@ -19,45 +19,48 @@ If any html, bootstrap, css language code or documentation used in my program wa
         <source src="./Superman_ThemeSong.mp3" type="audio/mpeg">
     </audio>
 </head>
-<body>
-<div class="row" style="margin-bottom: -12px;">
-    <h1 class="px-4 pt-2">Some Header</h1>
-</div>
+<body style="font-family: Arial, Helvetica, sans-serif">
+    <audio loop><source src="Superman_ThemeSong.mp3" type="audio/mpeg">Audio not supported.</audio>
+    <header style="padding-left: 10px; padding-top: 10px;">
+        <h1><strong>Some Header</strong></h1>
+    </header>
 <hr>
-<div class="container d-flex align-items-center justify-content-center" style="gap: 12px;">
+    <form class="d-flex justify-content-center align-items-center gap-3 vh-50">
         <div>
-            <label>Field 1</label>
+            <label for="field1">Field 1</label>
         </div>
         <div>
-            <input class="form-control">
+            <input type="text" name="Field 1" id="field1" class="form-control">
         </div>
         <div>
-            <label>Field 2</label>
+            <label for="field2">Field 2</label>
         </div>
         <div>
-            <select class="form-control">
-                <option>Open menu</option>
+            <select name="Field 2" id="field2" class="form-select">
+                <option value="">Open menu</option>
+                <option value="option 1">option 1</option>
+                <option value="option 2">option 2</option>
+                <option value="option 3">option 3</option>
             </select>
         </div>
         <div>
-            <label>Field 3</label>
+            <label for="field3">Field 3</label>
         </div>
         <div>
-            <textarea class="form-control" rows="3"></textarea>
+            <textarea name="Field 2" id="field3" class="form-control"></textarea>
         </div>
-        <div>
-            <button class="btn btn-primary">Submit</button>
-        </div>
-    </div>
-</div>
+        <button class="btn btn-primary">Submit</button>
+    </form>
 <hr>
 <div class="container" style="max-width: 850px;">
     <table class="table table-striped">
         <thead class="table-dark">
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Superhero Name</th>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Superhero Name</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
